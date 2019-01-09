@@ -1,0 +1,30 @@
+﻿@model MVC_Vistas.Models.DatosPersonales
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>MostrarDatos</title>
+</head>
+<body>
+    <div> 
+        <table>
+            <tr>
+                <th>@Html.DisplayNameFor(Model => Model.nombre)</th>
+                <th>@Html.DisplayNameFor(Model => Model.apellido)</th>
+                <th>@Html.DisplayNameFor(Model => Model.edad)</th>
+            </tr>
+            <tr>
+                <th>@Html.DisplayFor(Model => Model.nombre)</th>
+                <th>@Html.DisplayFor(Model => Model.apellido)</th>
+                <th>@Html.DisplayFor(Model => Model.edad)</th>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
